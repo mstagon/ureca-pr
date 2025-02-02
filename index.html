@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>자기소개 페이지</title>
+  <style>
+    @import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css');
+    body {
+      font-family: 'Pretendard', sans-serif;
+      background: linear-gradient(135deg, #C3B1E1, #A98BCE);
+      color: #333;
+      text-align: center;
+      padding: 50px;
+    }
+    .navbar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      background: rgba(255, 255, 255, 0.8);
+      padding: 15px 0;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+    .navbar a {
+      color: #8F77B5;
+      text-decoration: none;
+      font-size: 1.1em;
+      font-weight: bold;
+      transition: transform 0.3s, color 0.3s;
+    }
+    .navbar a:hover {
+      transform: scale(1.1);
+      color: #ff3b3b;
+    }
+    .container {
+      max-width: 600px;
+      margin: 120px auto;
+      background: white;
+      padding: 20px;
+      border-radius: 15px;
+      box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s;
+    }
+    .container:hover {
+      transform: scale(1.05);
+    }
+    h1 {
+      font-size: 2.2em;
+      color: #8F77B5;
+    }
+    p {
+      font-size: 1.2em;
+      line-height: 1.6;
+    }
+    section {
+      padding: 50px 0;
+    }
+    .section-image {
+      width: 100%;
+      max-height: 300px;
+      object-fit: cover;
+      margin-bottom: 20px;
+    }
+    @media (max-width: 768px) {
+      .navbar {
+        flex-direction: column;
+        gap: 10px;
+      }
+      .container {
+        margin: 100px 20px;
+        padding: 15px;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+      p {
+        font-size: 1em;
+      }
+    }
+  </style>
+</head>
+<body>
+<div class="navbar">
+  <a href="#info">✨ about me</a>
+  <a href="#experience">🌟 experience</a>
+  <a href="#hobbies">🎨 hobbies</a>
+  <a href="#plans">🚀 plans</a>
+</div>
+
+<section id="info" class="container">
+  <img src="" alt="저는 사진을 안찍는 사람이라는 걸 알았습니다." class="section-image">
+  <h1>✨ 내 기본 정보</h1>
+  <p><strong>이름:</strong> 최민석</p>
+  <p><strong>나이:</strong> 24</p>
+  <p><strong>전공:</strong> 정보통신공학과, 앱&웹 연계전공(복수학위)</p>
+  <p><strong>MBTI:</strong> ENFJ</p>
+</section>
+
+<section id="experience" class="container">
+  <h1>🌟 제일 좋았던 경험</h1>
+  <img src="./img/jp.jpg" alt="여행 경험 이미지" class="section-image">
+  <img src="./img/jp2.jpg" alt="여행 경험 이미지2" class="section-image">
+  <p>친구들과 일본 여행</p>
+  <p>후쿠오카에서의 첫 해외여행은 정말 잊지 못할 경험이었어요. 따뜻한 온천에서 피로를 풀고, 먹고 싶었던 음식도 실컷 먹었습니다. 특히 라멘과 유후인의 길거리 간식들이 최고였어요! 처음이라 긴장도 됐지만, 모든 순간이 즐겁고 새로웠던 여행이었어요. 😊✈️</p>
+</section>
+
+<section id="hobbies" class="container">
+  <h1>🎨 취미와 관심사</h1>
+  <p>게임(스팀겜, 라이엇겜 다합니다), 전자기기를 모으는 걸 좋아합니다. 그리고 JPOP을 좋합니다.</p>
+</section>
+
+<section id="plans" class="container">
+  <h1>🚀 앞으로의 계획</h1>
+  <p>REACT, NEXT, SPRING 공부해 풀스택 웹 개발자로 성장하기</p>
+  <p>나만의 웹 혹은 앱 서비스 배포하기</p>
+  <p>그리고 웹이나 앱 개발자로 취업하기</p>
+</section>
+
+</body>
+</html>
